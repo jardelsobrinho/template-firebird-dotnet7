@@ -8,4 +8,4 @@ Template já configurado:
 * Mediator
 * Firebird
 * Swagger
-* Docs
+* RapiDoc
