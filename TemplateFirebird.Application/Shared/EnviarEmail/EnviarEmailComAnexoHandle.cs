@@ -18,9 +18,9 @@ public class EnviarEmailComAnexoHandle : IRequestHandler<EnviarEmailComAnexoComm
 {
     private readonly string _smtpServer = "smtp.gmail.com";
     private readonly int _smtpPort = 587;
-    private readonly string _smtpUsername = "suportepedidoweb@gmail.com";
-    private readonly string _smtpPassword = "cczb iavh tbzw lsut";
-    private readonly string _fromEmail = "naoresponder@blesscloud.com.br";
+    private readonly string _smtpUsername = "";
+    private readonly string _smtpPassword = "";
+    private readonly string _fromEmail = "";
 
     public async Task<Unit> Handle(EnviarEmailComAnexoCommand request, CancellationToken cancellationToken)
     {
