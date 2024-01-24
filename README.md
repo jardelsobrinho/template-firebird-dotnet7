@@ -7,3 +7,5 @@ Template já configurado:
 * Mapper
 * Mediator
 * Firebird
+* Swagger
+* Docs
