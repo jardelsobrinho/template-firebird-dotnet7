@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>0ca35765-7fcf-489e-a168-4113a9b99990</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerfileTag>api.bless.sidi</DockerfileTag>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IGeekFan.AspNetCore.RapiDoc" Version="0.0.7" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.15" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+	<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+		<PrivateAssets>all</PrivateAssets>
+		<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TemplateFirebird.Application\TemplateFirebird.Application.csproj" />
+    <ProjectReference Include="..\TemplateFirebird.Domain\TemplateFirebird.Domain.csproj" />
+    <ProjectReference Include="..\TemplateFirebird.Infra\TemplateFirebird.Infra.csproj" />
+    <ProjectReference Include="..\TemplateFirebird.Shared\TemplateFirebird.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
